@@ -1,0 +1,14 @@
+.navbar {
+  @apply h-24
+    w-full
+    flex
+    items-center
+    justify-between
+    py-4;
+}
+
+.navbar__router-links-container {
+  @apply flex
+  justify-between
+  gap-4;
+}
