@@ -8,9 +8,7 @@
     min-w-[30%]
     hover:cursor-pointer
     shadow-xl
-    rounded-sm
-    mb-4
-    mx-2;
+    rounded-md;
 }
 
 .category-item__container:hover .category-item__image {
