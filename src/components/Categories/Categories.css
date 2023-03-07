@@ -1,0 +1,6 @@
+.categories {
+  @apply flex 
+    flex-wrap 
+    justify-between 
+    w-full;
+}

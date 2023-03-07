@@ -1,0 +1,59 @@
+.category-item__container {
+  @apply flex
+    flex-auto
+    items-center
+    justify-center
+    h-60
+    overflow-hidden
+    min-w-[30%]
+    hover:cursor-pointer
+    shadow-xl
+    rounded-sm
+    mb-4
+    mx-2;
+}
+
+.category-item__container:hover .category-item__image {
+  @apply scale-110;
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.category-item__container:hover .category-item__text-box {
+  @apply opacity-90;
+}
+
+.category-item__container.large {
+  @apply h-96;
+}
+
+.category-item__image {
+  @apply w-full
+    h-full
+    bg-cover
+    bg-center;
+}
+
+.category-item__text-box {
+  @apply flex
+    flex-col
+    items-center
+    justify-center 
+    h-24
+    px-6
+    shadow-lg
+    bg-white
+    opacity-70
+    absolute;
+}
+
+.category-item__text-box h2 {
+  @apply font-bold
+    mx-2
+    text-gray-600
+    text-xl;
+}
+
+.category-item__text-box p {
+  @apply font-light
+    text-base;
+}
