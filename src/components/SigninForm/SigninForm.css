@@ -1,0 +1,11 @@
+.signin-form {
+  @apply flex
+  flex-col
+  gap-4
+  w-full;
+}
+
+.signin-form__buttons {
+  @apply flex
+    gap-4;
+}
