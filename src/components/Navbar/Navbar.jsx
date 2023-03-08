@@ -1,8 +1,13 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
+import { UserContext } from '../../contexts/UserContext'
+import { signOutUser } from '../../utils/firebase'
 import './Navbar.css'
 
 function Navbar() {
+  const { user } = useContext(UserContext)
+
   return (
     <div className='navbar'>
       <Link to='/' className='navbar__logo-router-link'>
@@ -13,9 +18,16 @@ function Navbar() {
         <Link to='/shop' className='navbar__router-link'>
           Shop
         </Link>
-        <Link to='/auth' className='navbar__router-link'>
-          Sign in
-        </Link>
+
+        {user ? (
+          <span className='navbar__router-link' onClick={signOutUser}>
+            Sign out
+          </span>
+        ) : (
+          <Link to='/auth' className='navbar__router-link'>
+            Sign in
+          </Link>
+        )}
       </div>
     </div>
   )
