@@ -1,5 +1,6 @@
 .signup-form {
   @apply flex
     flex-col
-    gap-4;
+    gap-4
+    w-full;
 }

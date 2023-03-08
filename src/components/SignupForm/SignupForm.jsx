@@ -65,8 +65,8 @@ function SignupForm() {
         <FormInput
           label='Email'
           type='email'
-          name='email'
-          id='email'
+          name='signup-email'
+          id='signup-email'
           required
           value={email}
           onChange={handleChange}
@@ -75,8 +75,8 @@ function SignupForm() {
         <FormInput
           label='Password'
           type='password'
-          name='password'
-          id='password'
+          name='signup-password'
+          id='signup-password'
           required
           value={password}
           onChange={handleChange}
