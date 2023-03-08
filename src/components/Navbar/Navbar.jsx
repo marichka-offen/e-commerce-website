@@ -13,7 +13,7 @@ function Navbar() {
         <Link to='/shop' className='navbar__router-link'>
           Shop
         </Link>
-        <Link to='/sign-in' className='navbar__router-link'>
+        <Link to='/auth' className='navbar__router-link'>
           Sign in
         </Link>
       </div>
