@@ -1,0 +1,36 @@
+.button {
+  @apply min-w-[165px]
+  w-auto
+  uppercase
+  font-semibold
+  text-white
+  bg-gray-700
+  text-sm
+  py-4
+  rounded-md
+  tracking-widest
+  transition
+  hover:bg-white
+  hover:text-black;
+  border: 2px solid rgb(55 65 81);
+}
+
+.button--google-sign-in {
+  @apply bg-blue-500
+  text-white
+  border-none
+  transition
+  hover:bg-blue-700
+  hover:border-blue-700
+  hover:text-white;
+  border: 2px solid rgb(59 130 246);
+}
+
+.button--inverted {
+  @apply bg-white
+ text-gray-700
+  transition
+ hover:bg-gray-700
+ hover:text-white;
+  border: 2px solid rgb(55 65 81);
+}

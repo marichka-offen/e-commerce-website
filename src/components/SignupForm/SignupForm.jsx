@@ -3,7 +3,9 @@ import {
   createAuthUserWithEmailAndPassword,
   createUserProfileDocument,
 } from '../../utils/firebase'
+import Button from '../Button/Button'
 import FormInput from '../FormInput/FormInput'
+import './SignupForm.css'
 
 const defaultFormFields = {
   displayName: '',
@@ -46,8 +48,9 @@ function SignupForm() {
   const resetFormFields = () => {}
 
   return (
-    <div>
-      <h1>Sign up with your email and password</h1>
+    <div className='signup-form'>
+      <h2>Don't have an account?</h2>
+      <span>Sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
           label='Display name'
@@ -89,7 +92,7 @@ function SignupForm() {
           onChange={handleChange}
         />
 
-        <button type='submit'>Sign up</button>
+        <Button type='submit' text='Sign up' />
       </form>
     </div>
   )
