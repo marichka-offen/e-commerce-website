@@ -1,3 +1,4 @@
+import SignupForm from '../../components/SignupForm/SignupForm'
 import {
   createUserProfileDocument,
   signInWithGooglePopup,
@@ -10,6 +11,7 @@ function SignIn() {
   }
   return (
     <div>
+      <SignupForm />
       <h1>Sign in</h1>
       <button onClick={logGoogleUser}>Google Sign in</button>
     </div>
