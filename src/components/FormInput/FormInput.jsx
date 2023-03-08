@@ -1,17 +1,18 @@
 import './FormInput.css'
 
-function FormInput({ label, ...otherProps }) {
+function FormInput({ label, ...options }) {
   return (
     <div className='form-input'>
+      <input {...options} className='form-input__input' />
+
       <label
-        htmlFor={otherProps.name}
+        htmlFor={options.name}
         className={`form-input__label ${
-          otherProps.value.length ? 'form-input__label--shrink' : ''
+          options.value.length ? 'form-input__label--shrink' : ''
         }`}
       >
         {label}
       </label>
-      <input {...otherProps} className='form-input__input' />
     </div>
   )
 }

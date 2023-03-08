@@ -27,7 +27,8 @@
   top-2;
   transition: 300ms ease all;
 }
-.form-input__label--shrink {
+.form-input__label--shrink,
+.form-input__input:focus ~ .form-input__label {
   @apply text-black
   -top-4
   text-xs;
