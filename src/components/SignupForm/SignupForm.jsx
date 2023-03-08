@@ -41,11 +41,7 @@ function SignupForm() {
       }
       console.log('Error creating user', error.message)
     }
-
-    resetFormFields()
   }
-
-  const resetFormFields = () => {}
 
   return (
     <div className='signup-form'>
@@ -65,7 +61,7 @@ function SignupForm() {
         <FormInput
           label='Email'
           type='email'
-          name='signup-email'
+          name='email'
           id='signup-email'
           required
           value={email}
@@ -75,7 +71,7 @@ function SignupForm() {
         <FormInput
           label='Password'
           type='password'
-          name='signup-password'
+          name='password'
           id='signup-password'
           required
           value={password}

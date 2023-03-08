@@ -6,7 +6,7 @@ function FormInput({ label, ...options }) {
       <input {...options} className='form-input__input' />
 
       <label
-        htmlFor={options.name}
+        htmlFor={options.id}
         className={`form-input__label ${
           options.value.length ? 'form-input__label--shrink' : ''
         }`}

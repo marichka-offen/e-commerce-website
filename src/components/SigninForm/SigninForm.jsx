@@ -17,6 +17,8 @@ function SigninForm() {
   const [formFields, setFormFields] = useState(defaultFormFields)
   const { email, password } = formFields
 
+  const signinGoogleUser = async () => await signInWithGooglePopup()
+
   const handleChange = (event) => {
     const { name, value } = event.target
     setFormFields({ ...formFields, [name]: value })
@@ -47,11 +49,6 @@ function SigninForm() {
     }
   }
 
-  const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup()
-    await createUserProfileDocument(user)
-  }
-
   return (
     <div className='signin-form'>
       <h2>I already have an account</h2>
@@ -61,7 +58,7 @@ function SigninForm() {
         <FormInput
           label='Email'
           type='email'
-          name='signin-email'
+          name='email'
           id='signin-email'
           required
           value={email}
@@ -71,7 +68,7 @@ function SigninForm() {
         <FormInput
           label='Password'
           type='password'
-          name='signin-password'
+          name='password'
           id='signin-password'
           required
           value={password}
@@ -82,7 +79,7 @@ function SigninForm() {
           <Button type='submit' text='Sign in' />
           <Button
             type='button'
-            onClick={logGoogleUser}
+            onClick={signinGoogleUser}
             text='Google Sign in'
             buttonType='google'
           />
