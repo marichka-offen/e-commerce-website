@@ -1,0 +1,36 @@
+.product-card {
+  @apply w-full
+  flex
+  items-center
+  flex-col
+  gap-1
+  relative;
+}
+
+.product-card__image {
+  @apply w-full
+  h-5/6
+  object-cover
+  transition;
+}
+.product-card:hover .product-card__image {
+  @apply opacity-70;
+}
+
+.product-card button {
+  @apply w-min
+  absolute
+  bottom-20
+  opacity-0
+  hover:opacity-100;
+}
+
+.product-card:hover button {
+  @apply opacity-100;
+}
+
+.product-card__footer {
+  @apply w-full
+  flex
+  justify-between;
+}
