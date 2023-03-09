@@ -2,12 +2,15 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
 import { UserContext } from '../../contexts/UserContext'
+import { CartContext } from '../../contexts/CartContext'
 import { signOutUser } from '../../utils/firebase'
 import './Navbar.css'
 import CartIcon from '../CartIcon/CartIcon'
+import CartDropdown from '../CartDropdown/CartDropdown'
 
 function Navbar() {
   const { user } = useContext(UserContext)
+  const { isCartOpen } = useContext(CartContext)
 
   return (
     <div className='navbar'>
@@ -32,6 +35,7 @@ function Navbar() {
 
         <CartIcon />
       </div>
+      {isCartOpen && <CartDropdown />}
     </div>
   )
 }
