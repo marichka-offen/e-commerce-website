@@ -7,7 +7,10 @@ const ButtonTypes = {
 
 function Button({ text, buttonType, ...options }) {
   return (
-    <button className={`button ${ButtonTypes[buttonType]}`} {...options}>
+    <button
+      className={`button ${buttonType ? ButtonTypes[buttonType] : ''}`}
+      {...options}
+    >
       {text}
     </button>
   )
