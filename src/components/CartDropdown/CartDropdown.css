@@ -4,6 +4,7 @@
   h-[420px]
   flex
   flex-col
+  justify-between
   gap-4
   p-4
   border
@@ -23,4 +24,9 @@
   flex-col
   overflow-scroll
   gap-4;
+}
+
+.cart-dropdown button {
+  @apply m-auto 
+  block;
 }
