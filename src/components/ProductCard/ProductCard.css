@@ -11,7 +11,8 @@
   @apply w-full
   h-5/6
   object-cover
-  transition;
+  transition
+  rounded-md;
 }
 .product-card:hover .product-card__image {
   @apply opacity-70;
