@@ -1,0 +1,5 @@
+.product-table {
+  @apply w-min
+  m-auto
+  mt-12;
+}

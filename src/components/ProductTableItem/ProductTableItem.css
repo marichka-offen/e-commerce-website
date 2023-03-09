@@ -1,0 +1,16 @@
+.product-table-item {
+  @apply grid
+  gap-4
+  w-full
+  items-center
+  py-4;
+  grid-template-columns: repeat(4, 150px) min-content;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.product-table-item__image {
+  @apply w-36
+  h-36
+  object-cover
+  rounded-md;
+}

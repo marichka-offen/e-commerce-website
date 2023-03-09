@@ -1,0 +1,13 @@
+.product-table__header {
+  @apply grid
+  gap-4
+  w-full;
+  grid-template-columns: repeat(4, 150px) min-content;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.product-table__header-item {
+  @apply w-max
+  py-4
+  text-sm;
+}
