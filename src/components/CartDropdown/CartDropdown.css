@@ -1,9 +1,10 @@
 .cart-dropdown {
   @apply absolute
-  w-60
-  h-96
+  w-64
+  h-[420px]
   flex
   flex-col
+  gap-4
   p-4
   border
   rounded-md
@@ -18,11 +19,8 @@
   mt-12;
 }
 .cart-dropdown__cart-items {
-  @apply h-60
-  flex
+  @apply flex
   flex-col
-  overflow-scroll;
-}
-.cart-dropdown button {
-  @apply mt-auto;
+  overflow-scroll
+  gap-4;
 }
