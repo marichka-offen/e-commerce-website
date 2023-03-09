@@ -10,5 +10,10 @@
 .navbar__router-links-container {
   @apply flex
   justify-between
+  items-center
   gap-4;
+}
+
+.navbar__router-link {
+  @apply cursor-pointer;
 }

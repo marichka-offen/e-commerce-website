@@ -1,0 +1,18 @@
+.cart-icon {
+  @apply relative
+  flex
+  items-center
+  justify-center
+  cursor-pointer;
+}
+
+.cart-icon__icon {
+  @apply w-7 h-7;
+}
+
+.cart-icon__item-count {
+  @apply absolute
+  mt-2
+  text-xs
+  font-bold;
+}
