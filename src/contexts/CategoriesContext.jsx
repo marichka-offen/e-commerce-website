@@ -19,7 +19,7 @@ export const CategoriesProvider = ({ children }) => {
   }, [])
 
   return (
-    <CategoriesContext.Provider value={{ categoriesMap, setCategoriesMap }}>
+    <CategoriesContext.Provider value={{ categoriesMap }}>
       {children}
     </CategoriesContext.Provider>
   )
