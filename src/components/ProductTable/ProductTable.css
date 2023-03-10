@@ -3,3 +3,10 @@
   m-auto
   mt-12;
 }
+
+.product-table__total {
+  @apply w-max
+  mt-7
+  ml-auto
+  text-3xl;
+}

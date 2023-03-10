@@ -5,7 +5,7 @@ import ProductTableHeader from '../ProductTableHeader/ProductTableHeader'
 import './ProductTable.css'
 
 function ProductTable() {
-  const { cartItems } = useContext(CartContext)
+  const { cartItems, cartTotal } = useContext(CartContext)
   return (
     <div className='product-table'>
       <ProductTableHeader />
@@ -19,6 +19,7 @@ function ProductTable() {
           ))}
         </div>
       )}
+      <div className='product-table__total'>Total: ${cartTotal}</div>
     </div>
   )
 }
