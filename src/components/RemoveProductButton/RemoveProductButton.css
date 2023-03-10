@@ -1,0 +1,12 @@
+.remove-product-button {
+  @apply text-2xl
+  pl-4
+ !m-0
+ transition
+ hover:text-red-600
+ active:text-red-800;
+}
+
+.remove-product-button--small {
+  @apply text-base;
+}
