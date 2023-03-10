@@ -11,15 +11,15 @@ function ProductTable() {
       <ProductTableHeader />
 
       {cartItems.length === 0 ? (
-        <div className='product-table__empty'>Your cart is empty</div>
+        <div className='product-table__empty-message'>Your cart is empty</div>
       ) : (
         <div>
           {cartItems.map((cartItem) => (
             <ProductTableItem cartItem={cartItem} key={cartItem.id} />
           ))}
+          <div className='product-table__total'>Total: ${cartTotal}</div>
         </div>
       )}
-      <div className='product-table__total'>Total: ${cartTotal}</div>
     </div>
   )
 }

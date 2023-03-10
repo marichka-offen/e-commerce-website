@@ -10,3 +10,9 @@
   ml-auto
   text-3xl;
 }
+
+.product-table__empty-message {
+  @apply text-center
+  text-2xl
+  mt-12;
+}
