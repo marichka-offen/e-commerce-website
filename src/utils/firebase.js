@@ -21,12 +21,12 @@ import {
 } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCjwn7Rrqe5Q1eiUMYlpPwP1nDBJj28AvI',
-  authDomain: 'ecomerce-website-db.firebaseapp.com',
-  projectId: 'ecomerce-website-db',
-  storageBucket: 'ecomerce-website-db.appspot.com',
-  messagingSenderId: '840716222401',
-  appId: '1:840716222401:web:2388de9b0752975bd0b940',
+  apiKey: 'AIzaSyDT9hYOB6CmX7iGATCIkroKN2zkH114kVE',
+  authDomain: 'crown-apparel-db-93694.firebaseapp.com',
+  projectId: 'crown-apparel-db-93694',
+  storageBucket: 'crown-apparel-db-93694.appspot.com',
+  messagingSenderId: '629975967250',
+  appId: '1:629975967250:web:bbd27e43a604d10d05dacb',
 }
 
 initializeApp(firebaseConfig)

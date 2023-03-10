@@ -103,9 +103,6 @@ export const CartProvider = ({ children }) => {
       0
     )
 
-    console.log(newCartItemsQuantity)
-    console.log(newCartTotal)
-
     dispatch({
       type: cartActionTypes.SET_CART_ITEMS,
       payload: {
