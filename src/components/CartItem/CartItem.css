@@ -15,7 +15,22 @@
     justify-center
     gap-2;
 }
+
+.cart-item__item-details--top-row {
+  @apply flex
+    justify-between
+    items-center
+    w-full;
+}
+
 .cart-item__name {
   @apply text-sm
     font-bold;
+}
+
+.cart-item__price {
+  @apply flex 
+  items-center 
+  gap-2 
+  text-sm;
 }
