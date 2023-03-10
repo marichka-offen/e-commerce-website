@@ -14,8 +14,8 @@ function Categories() {
       id: 3,
       imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
     },
-    { title: 'Women', id: 4, imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png' },
-    { title: 'Men', id: 5, imageUrl: 'https://i.ibb.co/R70vBrQ/men.png' },
+    { title: 'Womens', id: 4, imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png' },
+    { title: 'Mens', id: 5, imageUrl: 'https://i.ibb.co/R70vBrQ/men.png' },
   ]
 
   return (
