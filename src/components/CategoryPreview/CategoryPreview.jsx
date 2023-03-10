@@ -4,7 +4,10 @@ import './CategoryPreview.css'
 function CategoryPreview({ category, products }) {
   return (
     <div className='category-preview'>
-      <h2 className='category-preview__title'>{category}</h2>
+      <h2 className='category-preview__title'>
+        <span>{category}</span>
+        <span>&#10144;</span>
+      </h2>
       <div className='category-preview__categories'>
         {products
           .filter((_, idx) => idx < 4)
