@@ -1,0 +1,5 @@
+.categories-preview {
+  @apply flex
+    flex-col
+    gap-8;
+}
