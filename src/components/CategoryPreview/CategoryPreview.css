@@ -1,0 +1,11 @@
+.category-preview__title {
+  @apply text-3xl
+          font-bold
+          my-4;
+}
+
+.category-preview__categories {
+  @apply grid
+      grid-cols-4
+      gap-8;
+}

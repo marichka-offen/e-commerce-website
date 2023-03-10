@@ -1,5 +1,5 @@
 .shop {
-  @apply grid
-    grid-cols-4
-    gap-8;
+  @apply flex
+  flex-col
+  gap-8;
 }

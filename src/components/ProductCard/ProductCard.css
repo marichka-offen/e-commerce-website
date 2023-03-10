@@ -9,7 +9,7 @@
 
 .product-card__image {
   @apply w-full
-  h-5/6
+  h-72
   object-cover
   transition
   rounded-md;
