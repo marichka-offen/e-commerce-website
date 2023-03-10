@@ -28,5 +28,6 @@
 
 .cart-dropdown button {
   @apply m-auto 
+  my-0
   block;
 }
