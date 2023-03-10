@@ -10,8 +10,9 @@
 
 body {
   @apply mx-8
-    text-lg
-    uppercase;
+  mb-16
+  text-lg
+  uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Tilt Neon', sans-serif;
