@@ -1,20 +1,19 @@
-import Button from '../Button/Button'
+import QuantitySelector from '../QuantitySelector/QuantitySelector'
 import './ProductTableItem.css'
+import RemoveProductButton from '../RemoveProductButton/RemoveProductButton'
 
-function ProductTableItem({ cartItem: { imageUrl, name, quantity, price } }) {
+function ProductTableItem({ cartItem }) {
+  const { id, imageUrl, name, price } = cartItem
   return (
     <div className='product-table-item'>
-      <img
-        src={imageUrl}
-        alt={name}
-        className='product-table-item__characteristic product-table-item__image'
-      />
-      <div className='product-table-item__characteristic'>{name}</div>
-      <div className='product-table-item__characteristic'>{quantity}</div>
-      <div className='product-table-item__characteristic'>${price}</div>
-      <div className='product-table-item__characteristic'>
-        <Button buttonType='inverted' text='X' />
-      </div>
+      <img src={imageUrl} alt={name} className='product-table-item__image' />
+      <div>{name}</div>
+
+      <QuantitySelector product={cartItem} />
+
+      <div>${price}</div>
+
+      <RemoveProductButton id={id} />
     </div>
   )
 }
