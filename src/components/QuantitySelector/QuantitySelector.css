@@ -1,0 +1,18 @@
+.quantity-selector {
+  @apply flex 
+  items-center 
+  gap-4;
+}
+
+.quantity-selector--small {
+  @apply gap-2;
+}
+
+.quantity-selector__arrow {
+  @apply text-2xl
+  active:text-slate-500;
+}
+
+.quantity-selector__arrow--small {
+  @apply text-base;
+}
