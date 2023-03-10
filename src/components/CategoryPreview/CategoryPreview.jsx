@@ -1,13 +1,17 @@
 import ProductCard from '../ProductCard/ProductCard'
 import './CategoryPreview.css'
+import { Link } from 'react-router-dom'
 
 function CategoryPreview({ category, products }) {
   return (
     <div className='category-preview'>
-      <h2 className='category-preview__title'>
+      <Link
+        to={`/shop/${category.toLowerCase()}`}
+        className='category-preview__title'
+      >
         <span>{category}</span>
         <span>&#10144;</span>
-      </h2>
+      </Link>
       <div className='category-preview__categories'>
         {products
           .filter((_, idx) => idx < 4)
