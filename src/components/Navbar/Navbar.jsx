@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
-import { UserContext } from '../../contexts/UserContext'
+import { useSelector } from 'react-redux'
 import { CartContext } from '../../contexts/CartContext'
 import { signOutUser } from '../../utils/firebase'
 import './Navbar.css'
@@ -9,7 +9,7 @@ import CartIcon from '../CartIcon/CartIcon'
 import CartDropdown from '../CartDropdown/CartDropdown'
 
 function Navbar() {
-  const { user } = useContext(UserContext)
+  const user = useSelector((state) => state.user.user) // rootReducer.userReducer.userValue
   const { isCartOpen } = useContext(CartContext)
 
   return (
