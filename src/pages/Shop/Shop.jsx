@@ -13,8 +13,8 @@ function Shop() {
   useEffect(() => {
     // addCollectionAndDocuments('categories', SHOP_DATA)
     const getCategoriesMap = async () => {
-      const categoryMap = await getCategoriesAndDocuments()
-      dispatch(setCategories(categoryMap))
+      const categories = await getCategoriesAndDocuments()
+      dispatch(setCategories(categories))
     }
     getCategoriesMap()
     // eslint-disable-next-line react-hooks/exhaustive-deps
